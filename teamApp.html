@@ -31,6 +31,12 @@
           <button data-ng-click="generateTeams(teamNumber)">Create teams</button>
         </form>
       </div>
+      <div data-ng-repeat="team in teams">
+        <h3>Team {{$index + 1}}</h3>
+        <ul>
+          <li data-ng-repeat="person in team">{{person}}</li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>
