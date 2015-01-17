@@ -1,2 +1,5 @@
 # AngularJS-Teams
-Web Designer - 229
+[Web Designer - 229]
+
+
+[Web Designer - Issue 229]: https://www.imagineshop.co.uk/magazines/webdesigner/web-designer-issue-229.html
