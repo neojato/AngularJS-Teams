@@ -13,6 +13,12 @@
       <h1 data-ng-bind="pageTitle"></h1>
       <input type="text" data-ng-model="name" />
       <button data-ng-click="add(name)">Add</button>
+      <ul>
+        <li data-ng-repeat="person in people">
+          <h2>{{person}}</h2>
+          <button data-ng-click="remove($index)">Delete</button>
+        </li>
+      </ul>
     </section>
   </body>
 </html>
