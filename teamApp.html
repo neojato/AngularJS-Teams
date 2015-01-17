@@ -11,14 +11,26 @@
   <body data-ng-app="myTeamApp">
     <section data-ng-controller="teamCtrl">
       <h1 data-ng-bind="pageTitle"></h1>
-      <input type="text" data-ng-model="name" />
-      <button data-ng-click="add(name)">Add</button>
+      <div class="people">
+        <form>
+          <label>Person name:</label>
+          <input type="text" data-ng-model="name" />
+          <button data-ng-click="add(name)">Add</button>
+        </form>
+      </div>
       <ul>
         <li data-ng-repeat="person in people">
           <h2>{{person}}</h2>
           <button data-ng-click="remove($index)">Delete</button>
         </li>
       </ul>
+      <div class="teams">
+        <form>
+          <label>No of Teams:</label>
+          <input type="number" data-ng-model="teamNumber" />
+          <button data-ng-click="generateTeams(teamNumber)">Create teams</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
