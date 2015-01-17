@@ -25,9 +25,12 @@ var teamApp = angular.module('myTeamApp', [])
         return out;
     };
     $scope.generateTeams = function(number) {
-    	$scope.teams = [];
+    	$scope.resetTeams();
     	var shuffled = $scope.shuffle(angular.copy($scope.people));
     	$scope.teams = $scope.chunk(shuffled, number);
     	console.log($scope.teams);
     };
+    $scope.resetTeams = function() {
+      $scope.teams = [];
+    }
   }]);
