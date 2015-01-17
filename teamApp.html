@@ -11,6 +11,8 @@
   <body data-ng-app="myTeamApp">
     <section data-ng-controller="teamCtrl">
       <h1 data-ng-bind="pageTitle"></h1>
+      <input type="text" data-ng-model="name" />
+      <button data-ng-click="add(name)">Add</button>
     </section>
   </body>
 </html>
