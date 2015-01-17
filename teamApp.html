@@ -29,6 +29,7 @@
           <label>No of Teams:</label>
           <input type="number" data-ng-model="teamNumber" />
           <button data-ng-click="generateTeams(teamNumber)">Create teams</button>
+          <button data-ng-show="teams.length > 0" data-ng-click="resetTeams()">Reset teams</button>
         </form>
       </div>
       <div data-ng-repeat="team in teams">
